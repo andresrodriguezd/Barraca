@@ -1,0 +1,36 @@
+{
+  "madera": [
+    {
+      "id": 1,
+      "medida": "1x5",
+      "caracteristica": "Impregnado",
+      "tipo": "Terraza",
+      "descripcion": "Impregnado para mayor durabilidad y protección contra bacterias, hongos e insectos",
+      "material": "pino",
+      "color": "natural",
+      "largo": 3.2,
+      "ancho": 5,
+      "espesor": 1,
+      "precio": 1800,
+      "stock": 400,
+      "fechaIngreso": "24-04-2019",
+      "fechaActualizacion": "24-04-2019"
+    },
+    {
+      "id": 2,
+      "medida": "1x6",
+      "caracteristica": "Impregnado",
+      "tipo": "Terraza",
+      "descripcion": "Impregnado para mayor durabilidad y protección contra bacterias, hongos e insectos",
+      "material": "pino",
+      "color": "natural",
+      "largo": 3.2,
+      "ancho": 6,
+      "espesor": 1,
+      "precio": 1800,
+      "stock": 200,
+      "fechaIngreso": "24-04-2019",
+      "fechaActualizacion": "24-04-2019"
+    }
+  ]
+}
