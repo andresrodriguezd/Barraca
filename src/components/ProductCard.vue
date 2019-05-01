@@ -1,10 +1,11 @@
 <template>
   <div>
     <v-card>
-      <v-img :src="categoria.imagen" height="200px"></v-img>
+      <v-img :src="getImagen" height="200px"></v-img>
       <v-card-title primary-title>
         <div>
-          <div class="headline text-uppercase">{{ categoria.nombre }}</div>
+          <div class="headline text-uppercase">{{ titulo }}</div>
+
           <span class="grey--text">1,000 miles of wonder</span>
         </div>
       </v-card-title>
@@ -22,6 +23,18 @@
 export default {
   props: {
     categoria: Object
+  },
+  computed: {
+    titulo() {
+      if (this.categoria.nombre !== undefined) {
+        return this.categoria.nombre;
+      } else {
+        return this.categoria.medida + " " + this.categoria.caracteristica;
+      }
+    },
+    getImagen() {
+      return require("@/assets/" + this.categoria.imagen);
+    }
   }
 };
 </script>

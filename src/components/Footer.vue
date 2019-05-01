@@ -11,7 +11,7 @@
         </v-card-title>
 
         <v-card-actions class="grey darken-4 justify-center">
-          &copy;20199 —
+          &copy;2019 —
           <strong>Vuetify</strong>
         </v-card-actions>
       </v-card>

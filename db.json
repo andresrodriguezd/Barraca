@@ -14,7 +14,8 @@
       "precio": 1800,
       "stock": 400,
       "fechaIngreso": "24-04-2019",
-      "fechaActualizacion": "24-04-2019"
+      "fechaActualizacion": "24-04-2019",
+      "imagen": "tipo-madera/tabla.jpg"
     },
     {
       "id": 2,
@@ -30,7 +31,8 @@
       "precio": 1800,
       "stock": 200,
       "fechaIngreso": "24-04-2019",
-      "fechaActualizacion": "24-04-2019"
+      "fechaActualizacion": "24-04-2019",
+      "imagen": "tipo-madera/tabla.jpg"
     }
   ]
 }
