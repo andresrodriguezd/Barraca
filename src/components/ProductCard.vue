@@ -12,7 +12,7 @@
 
       <v-card-actions>
         <v-btn flat>Share</v-btn>
-        <v-btn flat color="purple">Ver más</v-btn>
+        <v-btn to="/producto" flat color="purple">Ver más</v-btn>
         <v-spacer></v-spacer>
       </v-card-actions>
     </v-card>
