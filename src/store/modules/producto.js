@@ -1,4 +1,5 @@
 import ProductService from "@/services/ProductService.js";
+export const namespaced = true;
 export const state = {
   products: []
 };
