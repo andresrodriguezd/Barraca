@@ -1,8 +1,9 @@
 <template>
   <div>
-    <v-toolbar app color="grey lighten-3">
-      <v-img :src="require('../assets/logo.png')" class="my-3" contain height="60"></v-img>
+    <v-toolbar app color="amber accent-2">
+      <v-img :src="require('../assets/logo.png')" class="my-3" contain height="105"></v-img>
 
+      <v-spacer></v-spacer>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat to="/" exact>Home</v-btn>
