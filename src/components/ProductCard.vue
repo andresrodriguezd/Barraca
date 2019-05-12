@@ -22,18 +22,18 @@
 <script>
 export default {
   props: {
-    categoria: Object
+    item: Object
   },
   computed: {
     titulo() {
-      if (this.categoria.nombre !== undefined) {
-        return this.categoria.nombre;
+      if (this.item.nombre !== undefined) {
+        return this.item.nombre;
       } else {
-        return this.categoria.medida + " " + this.categoria.caracteristica;
+        return this.item.medida + " " + this.item.caracteristica;
       }
     },
     getImagen() {
-      return require("@/assets/" + this.categoria.imagen);
+      return require("@/assets/" + this.item.imagen);
     }
   }
 };

@@ -3,13 +3,15 @@
     <v-flex xs12 class="my-3" align-center>
       <div class="text-xs-center">
         <h2 class="headline font-weight-medium">Productos</h2>
-        <span class="subheading font-weight-medium grey-darken-1--text">Categorias</span>
+        <span class="subheading font-weight-medium grey-darken-1--text">
+          <slot name="subtitle"></slot>
+        </span>
       </div>
     </v-flex>
     <v-container grid-list-md pb-5>
       <v-layout row wrap>
-        <v-flex xs12 sm3 v-for="categoria in categorias" :key="categoria.id">
-          <ProductCard :categoria="categoria"/>
+        <v-flex xs12 sm3 v-for="item in items" :key="item.id">
+          <ProductCard :item="item"/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -17,20 +19,13 @@
 </template>
 
 <script>
-import ProductCard from "@/components/ProductCard.vue";
-import { mapState, mapActions } from "vuex";
-
 export default {
-  created() {
-    this.fetchProducts();
+  props: {
+    items: Array
   },
   components: {
-    ProductCard
-  },
-  computed: mapState({
-    categorias: state => state.product.products
-  }),
-  methods: mapActions("product", ["fetchProducts"])
+    ProductCard: () => import("@/components/ProductCard.vue")
+  }
 };
 </script>
 

@@ -4,7 +4,9 @@
 
     <Offer/>
 
-    <ProductList/>
+    <ProductList :items="items">
+      <span slot="subtitle">Categorias</span>
+    </ProductList>
 
     <Subscribe/>
   </div>
@@ -22,7 +24,7 @@ export default {
     ProductList: () => import("@/components/ProductList")
   },
   computed: mapState({
-    categorias: state => state.categorias
+    items: state => state.categorias
   })
 };
 </script>
