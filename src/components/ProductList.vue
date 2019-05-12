@@ -8,7 +8,7 @@
         </span>
       </div>
     </v-flex>
-    <v-container grid-list-md pb-5>
+    <v-container grid-list-lg pb-5>
       <v-layout row wrap>
         <v-flex xs12 sm3 v-for="item in items" :key="item.id">
           <ProductCard :item="item"/>

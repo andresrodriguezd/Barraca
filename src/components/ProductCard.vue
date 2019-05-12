@@ -11,9 +11,9 @@
       </v-card-title>
 
       <v-card-actions>
-        <v-btn flat>Share</v-btn>
-        <v-btn to="/producto" flat color="purple">Ver más</v-btn>
-        <v-spacer></v-spacer>
+        <v-flex xs4 offset-xs8>
+          <v-btn to="/producto" class="orange lighten-2 white--text">Ver más</v-btn>
+        </v-flex>
       </v-card-actions>
     </v-card>
   </div>
