@@ -12,7 +12,9 @@
 
       <v-card-actions>
         <v-flex xs4 offset-xs8>
-          <v-btn to="/producto" class="orange lighten-2 white--text">Ver más</v-btn>
+          <v-btn :to="url" class="orange lighten-2 white--text">
+            <slot name="btnLabel"></slot>
+          </v-btn>
         </v-flex>
       </v-card-actions>
     </v-card>
@@ -22,7 +24,11 @@
 <script>
 export default {
   props: {
-    item: Object
+    item: Object,
+    url: {
+      default: "/",
+      type: String
+    }
   },
   computed: {
     titulo() {

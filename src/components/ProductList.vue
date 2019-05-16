@@ -11,7 +11,9 @@
     <v-container grid-list-lg pb-5>
       <v-layout row wrap>
         <v-flex xs12 sm3 v-for="item in items" :key="item.id">
-          <ProductCard :item="item"/>
+          <ProductCard :item="item" :url="url">
+            <span slot="btnLabel">{{ btnLabel }}</span>
+          </ProductCard>
         </v-flex>
       </v-layout>
     </v-container>
@@ -21,7 +23,15 @@
 <script>
 export default {
   props: {
-    items: Array
+    items: Array,
+    btnLabel: {
+      default: "Ver más",
+      type: String
+    },
+    url: {
+      default: "/producto",
+      type: String
+    }
   },
   components: {
     ProductCard: () => import("@/components/ProductCard.vue")
