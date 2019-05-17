@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       label: "Ver Ficha",
-      url: "/detalle"
+      url: "detalle"
     };
   },
   created() {

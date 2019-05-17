@@ -3,17 +3,16 @@
     <v-container grid-list-md>
       <v-layout row wrap pb-4>
         <v-flex xs12 sm6 pr-5>
-          <div class="headline mb-2 font-weight-medium">Sobre Nosotros</div>
+          <div class="headline mb-2 font-weight-medium">{{ titulo }}</div>
           <v-layout column>
             <p>
-              Somos una empresa familiar con varios años en el rubro, contamos con gran variedad en tipos de madera y ademas con todo lo necesario para que te preocupes solo
-              en instalar. Tenemos facilidades de pago y una muy buena ubicación todo en el centro de la ciudad
+              {{ item.descripcion }}
             </p>
           </v-layout>
         </v-flex>
         <v-flex xs12 sm6>
           <v-layout column>
-            <v-img :src="require('../assets/2.jpg')" aspect-ratio="1.7"></v-img>
+            <v-img :src="getImagen" aspect-ratio="1.7"></v-img>
           </v-layout>
         </v-flex>
       </v-layout>
@@ -22,7 +21,25 @@
 </template>
 
 <script>
-export default {};
+import { mapState, mapActions } from "vuex";
+export default {
+  props: ["id"],
+  created() {
+    this.$store.dispatch("product/fetchProduct", this.id);
+  },
+  computed: {
+    titulo() {
+      return this.item.medida + " " + this.item.caracteristica;
+    },
+    getImagen() {
+      return require("@/assets/" + this.item.imagen);
+    },
+    ...mapState({
+      item: state => state.product.product
+    })
+  },
+  methods: mapActions("product", ["fetchProduct"])
+};
 </script>
 
 <style scoped>

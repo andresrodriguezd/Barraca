@@ -28,10 +28,7 @@ export default {
       default: "Ver más",
       type: String
     },
-    url: {
-      default: "/producto",
-      type: String
-    }
+    url: String
   },
   components: {
     ProductCard: () => import("@/components/ProductCard.vue")

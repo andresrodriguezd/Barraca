@@ -12,7 +12,7 @@
 
       <v-card-actions>
         <v-flex xs4 offset-xs8>
-          <v-btn :to="url" class="orange lighten-2 white--text">
+          <v-btn :to="{ name: url, params: { id: item.id }}" class="orange lighten-2 white--text">
             <slot name="btnLabel"></slot>
           </v-btn>
         </v-flex>
@@ -26,7 +26,7 @@ export default {
   props: {
     item: Object,
     url: {
-      default: "/",
+      default: "producto",
       type: String
     }
   },
