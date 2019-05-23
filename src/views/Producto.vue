@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ProductList :items="items"/>
+    <ProductList :items="items" :btnLabel="label" :url="url"/>
   </div>
 </template>
 
@@ -8,6 +8,12 @@
 import { mapState, mapActions } from "vuex";
 
 export default {
+  data() {
+    return {
+      label: "Ver Ficha",
+      url: "detalle"
+    };
+  },
   created() {
     this.fetchProducts();
   },

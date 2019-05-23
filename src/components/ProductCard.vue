@@ -11,9 +11,11 @@
       </v-card-title>
 
       <v-card-actions>
-        <v-btn flat>Share</v-btn>
-        <v-btn to="/producto" flat color="purple">Ver más</v-btn>
-        <v-spacer></v-spacer>
+        <v-flex xs4 offset-xs8>
+          <v-btn :to="{ name: url, params: { id: item.id }}" class="orange lighten-2 white--text">
+            <slot name="btnLabel"></slot>
+          </v-btn>
+        </v-flex>
       </v-card-actions>
     </v-card>
   </div>
@@ -22,7 +24,11 @@
 <script>
 export default {
   props: {
-    item: Object
+    item: Object,
+    url: {
+      default: "producto",
+      type: String
+    }
   },
   computed: {
     titulo() {

@@ -14,7 +14,7 @@
               <v-flex xs12 md4>
                 <v-card class="elevation-0 px-2 py-4">
                   <v-card-text class="text-xs-center">
-                    <v-icon x-large class="amber--text text--lighten-2">color_lens</v-icon>
+                    <v-icon x-large class="amber--text text--lighten-2">straighten</v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline text-xs-center">Medidas especifas</div>
@@ -25,7 +25,7 @@
               <v-flex xs12 md4>
                 <v-card class="elevation-0 px-2 py-5">
                   <v-card-text class="text-xs-center">
-                    <v-icon x-large class="amber--text text--lighten-2">flash_on</v-icon>
+                    <v-icon x-large class="amber--text text--lighten-2">local_shipping</v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline">Despacho Gratuito</div>
@@ -40,7 +40,7 @@
               <v-flex xs12 md4>
                 <v-card class="elevation-0 px-2 py-4">
                   <v-card-text class="text-xs-center">
-                    <v-icon x-large class="amber--text text--lighten-2">build</v-icon>
+                    <v-icon x-large class="amber--text text--lighten-2">border_style</v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline text-xs-center">Cortes a tu medida</div>

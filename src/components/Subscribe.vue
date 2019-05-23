@@ -18,24 +18,24 @@
             </v-flex>
             <v-flex xs12 md6 offset-md1>
               <h2 class="font-weight-medium">Contacto</h2>
-              <v-list class="transparent">
+              <v-list class="transparent dark--text">
                 <v-list-tile>
                   <v-list-tile-avatar>
-                    <v-icon class="elevation-4" dark>mdi-email-outline</v-icon>
+                    <v-icon class="elevation-4">email</v-icon>
                   </v-list-tile-avatar>
                   <v-list-tile-title>EMAIL</v-list-tile-title>
                   <v-list-tile-sub-title>CONTACTO@ENTABLAR.CL</v-list-tile-sub-title>
                 </v-list-tile>
                 <v-list-tile>
                   <v-list-tile-avatar>
-                    <v-icon class="elevation-4" dark>mdi-map-marker</v-icon>
+                    <v-icon class="elevation-4">place</v-icon>
                   </v-list-tile-avatar>
                   <v-list-tile-title>DIRECCIÓN</v-list-tile-title>
                   <v-list-tile-sub-title>1234 WORLD DR. HERE, TX 76123</v-list-tile-sub-title>
                 </v-list-tile>
                 <v-list-tile>
                   <v-list-tile-avatar>
-                    <v-icon class="elevation-4" dark>mdi-phone</v-icon>
+                    <v-icon class="elevation-4">phone</v-icon>
                   </v-list-tile-avatar>
                   <v-list-tile-title>TELEFONO</v-list-tile-title>
                   <v-list-tile-sub-title>555-789-1234</v-list-tile-sub-title>
