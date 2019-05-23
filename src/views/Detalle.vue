@@ -3,10 +3,24 @@
     <v-container grid-list-md>
       <v-layout row wrap pb-4>
         <v-flex xs12 sm6 pr-5>
-          <div class="headline mb-2 font-weight-medium">{{ titulo }}</div>
+          <p class="headline mb-2">{{ titulo }}</p>
           <v-layout column>
             <p>{{ item.descripcion }}</p>
-            <h2 class="red--text headline font-weight-medium">${{ item.precio }} C/U</h2>
+            <h2 class="red--text font-weight-bold precio">${{ item.precio | toMoney }} C/U</h2>
+            <v-spacer></v-spacer>
+            <v-layout row wrap pb-4>
+              <v-flex xs12 sm6 pr-5>
+                <v-text-field
+                  type="number"
+                  label="Cantidad"
+                  append-outer-icon="add"
+                  prepend-icon="remove"
+                ></v-text-field>
+              </v-flex>
+              <v-flex xs12 sm6 pr-5>
+                <v-btn block class="orange lighten-2 white--text">Calcular</v-btn>
+              </v-flex>
+            </v-layout>
           </v-layout>
         </v-flex>
         <v-flex xs12 sm6>
@@ -100,4 +114,7 @@ export default {
 </script>
 
 <style scoped>
+.precio {
+  font-size: 28px !important;
+}
 </style>

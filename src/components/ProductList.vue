@@ -3,7 +3,7 @@
     <v-flex xs12 class="my-3" align-center>
       <div class="text-xs-center">
         <h2 class="headline font-weight-medium">Productos</h2>
-        <span class="subheading font-weight-medium grey-darken-1--text">
+        <span class="subheading font-weight-medium grey--text text--darken-1">
           <slot name="subtitle"></slot>
         </span>
       </div>
