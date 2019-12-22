@@ -4,6 +4,8 @@
 ```
 npm install
 ```
+### Json serve
+npm install -g json-server
 
 ### Compiles and hot-reloads for development
 ```
